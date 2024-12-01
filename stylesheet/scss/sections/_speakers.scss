@@ -1,0 +1,84 @@
+.speakers-section{
+    @extend %text-center-grey;
+    @extend %mb;
+}
+.speakers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    margin-top: 20px;
+    @include mediaBreakpoints(sm){
+        column-gap: 20px;       
+    }
+}
+.speaker-card{
+    flex: 0 0 90%;                //max 1 element  per row
+    // @include mediaBreakpoints(sm){}
+    @include mediaBreakpoints(md){ //max 2 elements per row
+        flex:1 0 42%;
+    }
+    @include mediaBreakpoints(lg){ //max 3 elements per row
+        flex-basis: 26.8%;
+    }
+
+    border: solid 3px $lighter-grey2;
+    border-radius: $primary-border-radius;
+    padding: 10px;
+    @include mediaBreakpoints(sm){
+        padding: 20px;
+    }
+    color: $light-grey;
+    h3{
+        font-size: $speakers-name-font-size;
+        line-height: 0px;
+    }
+    p{  overflow: hidden;
+        // height: 90px;
+        @include mediaBreakpoints(md){
+            height: 71px;
+        }
+        @include mediaBreakpoints(lg){
+            height: 90px;
+        }
+        @include mediaBreakpoints(xl){
+            height: 71px;
+        }
+    }
+    &__img{
+        width: 80px;
+        @include mediaBreakpoints(sm){
+            width: 100px;
+        }
+        @include mediaBreakpoints(md){
+            width: 120px;
+        }
+        height: auto;
+        border: solid 4px $lighter-grey2;
+        border-radius: 50%;
+    }
+    &__fb-icon{
+        height: 1.5rem; //24px
+        
+     }
+     &__tw-icon{
+        height:1.125rem ;//18px
+     }
+     &__in-icon{
+        height: 1.125rem;//18px
+     }
+     &__socialmedia-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        @include mediaBreakpoints(sm){
+            column-gap: 20px;
+        }
+        @include mediaBreakpoints(md){
+            column-gap: 30px;
+        }
+    }
+}
+// .contact-icon{
+// }

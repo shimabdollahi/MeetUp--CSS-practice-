@@ -1,0 +1,14 @@
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    @include mediaBreakpoints(sm){
+        padding: 13px 30px;
+    }
+    @include mediaBreakpoints(md){
+        padding: 15px 40px;
+    }
+    background-color: $third-color; 
+    color: $white;
+    border-radius: $primary-border-radius;
+    text-align: center;
+ }

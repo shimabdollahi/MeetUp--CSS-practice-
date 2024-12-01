@@ -1,0 +1,73 @@
+html{
+   font-size: 10px;
+   @include mediaBreakpoints(sm){
+      font-size: 13px;
+   }
+   @include mediaBreakpoints(md){
+      font-size: 16px;
+   }
+   // @include mediaBreakpoints(lg){}
+   // @include mediaBreakpoints(){}
+}
+body{
+    color: $grey;
+    font-family: $primary-font-family;
+ }
+ h1,h2 {
+    font-family: $secondary-font-family;
+ }
+ h2{
+    margin: 0;
+ }
+ .container{
+   max-width: calc(100% - 30px);
+   min-width: 257px; //check this????????????????????/
+   margin: auto;
+   //  padding: 0 100px;
+
+    @include mediaBreakpoints(sm){
+      max-width: 546px;
+    } //576-768
+    @include mediaBreakpoints(md){
+      max-width: 718px;
+    } //768-992
+    @include mediaBreakpoints(lg){
+      max-width: 922px;
+    } //992-1200
+    @include mediaBreakpoints(xl){
+      max-width: 1100px;
+    } //1200-1400
+   //  @include mediaBreakpoints(xxl){} //1400-...
+ }
+ a{
+    text-decoration: none;
+ }
+ ul{
+    list-style: none;
+    padding: 0px;
+ }
+ img{
+    width: auto;
+ }
+
+//  section[class*=-section] { 
+//    margin-bottom: 30px;
+//  }
+ .mb{
+    margin-bottom: 30px;
+ }
+ %mb{
+    margin-bottom: 30px;
+ }
+ .h2{
+    line-height: $h2-line-height;
+    font-size: $h2-font-size;
+ }
+ %flex-space-between{
+   display: flex;
+   justify-content: space-between;
+}
+%text-center-grey{
+   text-align: center;
+   color: $grey;
+}

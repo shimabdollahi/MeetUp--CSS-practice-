@@ -1,0 +1,24 @@
+@font-face {
+    font-family: BrandaYolq;
+    src: url(/stylesheet/fonts/branda-font/Branda-yolq.ttf);
+ }
+ @font-face {
+    font-family: QueenSidesMedium;
+    src: url(/stylesheet/fonts/queensides-font/QueensidesMedium-x30zV.ttf);
+ }
+
+$primary-font-family:QueenSidesMedium;
+$secondary-font-family:BrandaYolq;
+
+$primary-border-radius: 5px;
+$input-border-radius: 3px;
+
+$h2-line-height:4.375rem ;//70px
+
+$icon-font-size:5rem ; //80px
+$small-font-size:0.8125rem; //13px footer right, contact__btn
+$form-input-font-size:0.75rem; //12px contact__input
+$hero-describtion-font-size:1.375rem; //22px hero p 
+$speakers-name-font-size:1.875rem; //30px .speaker-card h3
+$price-font-size:3.75rem; //60px ticket price
+$h2-font-size:1.625rem;//26px .h2

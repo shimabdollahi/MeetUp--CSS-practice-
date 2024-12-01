@@ -1,0 +1,44 @@
+.event-intro-section{
+    @extend %text-center-grey;
+    margin-bottom: 70px;
+}
+.event-intro{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    // margin-bottom: 30px;
+    @include mediaBreakpoints(sm){
+        gap: 10px;       
+    }
+    @include mediaBreakpoints(md){
+        gap: 20px;
+    }
+    @include mediaBreakpoints(lg){
+        gap: 30px;
+    }
+    &__icon{
+        width:5rem ;//80px
+        color: $primary-dark-color;
+        height: auto;
+        font-size: $icon-font-size;
+    }
+    &__element{
+        flex: 1 0 100%;                //max 1 element  per row
+        @include mediaBreakpoints(sm){ //max 2 elements per row
+            flex-basis: 47%;
+        }
+        @include mediaBreakpoints(md){ //max 3 elements per row
+            flex-basis: 31%;
+        }
+        
+    }
+}
+
+/* .event-intro{
+    display: flex;
+    flex-grow: 1;
+    gap: 30px;
+    margin-bottom: 30px;
+} */
+

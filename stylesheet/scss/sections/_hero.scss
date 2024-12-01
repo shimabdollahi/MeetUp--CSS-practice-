@@ -1,0 +1,52 @@
+.hero-section{ 
+    background-color: $primary-color;
+    padding: 40px 0;
+    @include mediaBreakpoints(sm){
+        padding: 50px 0;
+    }
+    @include mediaBreakpoints(md){
+        padding: 60px 0;
+    }
+    @include mediaBreakpoints(lg){
+        padding: 80px 0;
+    }
+    @extend %mb;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include mediaBreakpoints(md){
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    &__meetup{
+        color: $white;
+        margin-bottom:10px;  
+        @include mediaBreakpoints(lg){
+            margin-bottom: 100px;
+        }
+        img{
+            height:3.75rem ;//60px
+        }
+        p{
+            margin-bottom: 30px;
+            @include mediaBreakpoints(lg){
+                margin-bottom: 60px;
+            }
+            font-size: $hero-describtion-font-size;
+        }
+    }
+    &__rocket-img{
+        height:250px ;
+        @include mediaBreakpoints(md){
+            height: 300px;
+        }
+        @include mediaBreakpoints(lg){
+            height: 350px;
+        }
+        @include mediaBreakpoints(xl){
+            height: 400px;
+        }
+    }
+}
